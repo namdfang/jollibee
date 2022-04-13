@@ -1,0 +1,36 @@
+@import "../../assets/scss/variables";
+$hover_color:#f4d2d6;
+
+.navbar {
+    background-color: $main_color;
+    &-logo {
+        img {
+            width: 100px;
+        }
+    }
+    &-menu-top {
+        margin-top: 20px;
+        img {
+            width: 30px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+    &-menu-bottom {
+        color: $white_color;
+        a {
+            font-size: 13px;
+            font-weight: 800;
+            padding: 13px 5px;
+            margin: 0 8px;
+            border-top-right-radius: 14px;
+            border-top-left-radius: 14px;
+            &:hover {
+                cursor: pointer;
+                background-color: $hover_color;
+                color: $main_color!important;
+            }
+        }
+    }
+}
